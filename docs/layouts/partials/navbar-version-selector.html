@@ -2,10 +2,12 @@
 	{{ .Site.Params.version_menu }}
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	{{ range first 5 (sort .Site.Pages ".File.ContentBaseName" "desc") -}}
+	{{ range sort .Site.Pages ".File.ContentBaseName" "desc" -}}
       {{ if (findRE "docs" .File.ContentBaseName) -}}
-      {{ $version := replaceRE "docs-" "" .File.ContentBaseName -}}
-      <a class="dropdown-item" href="{{ .RelPermalink }}">folder-{{ $version }}</a>
+      {{ $versionFile :=  printf "%s%s" .File.Dir "/version"  -}}
+      {{ if fileExists $versionFile -}}
+        <a class="dropdown-item" href="{{ .RelPermalink }}">folder-{{readFile ( $versionFile )}}</a>
+      {{ end -}}
       {{ end -}}
     {{ end -}}
     {{ $path := "" }}
