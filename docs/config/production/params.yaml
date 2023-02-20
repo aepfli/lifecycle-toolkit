@@ -1,2 +1,4 @@
 
-versions: []
+versions:
+- url: https://main-lifecycle-toolkit.keptn.sh
+  version: development
