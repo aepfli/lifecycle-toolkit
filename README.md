@@ -66,7 +66,7 @@ The certificate creation
 is handled automatically
 by [klt-cert-manager](https://github.com/keptn/lifecycle-toolkit/blob/main/klt-cert-manager/README.md). Versions 0.5.0
 and earlier have a hard dependency on the [cert-manager](https://cert-manager.io).
-See [installation guideline](https://github.com/keptn/lifecycle-toolkit/blob/main/docs/content/en/docs/snippets/tasks/install.md)
+See [installation guideline](https://github.com/keptn/lifecycle-toolkit/blob/main/docs/content/docs/snippets/tasks/install.md)
 for more info.
 
 ## Goals
@@ -481,3 +481,6 @@ Made with [contrib.rocks](https://contrib.rocks).
 
 <!-- markdownlint-disable-next-line MD033 MD013 -->
 <img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=858843d8-8da2-4ce5-a325-e5321c770a78" />
+
+
+testing 
