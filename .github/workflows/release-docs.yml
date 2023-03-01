@@ -10,13 +10,13 @@ on:
       page_dir:
         description: "Root directory of the website"
         type: "string"
-        required: true
-        default: "./tmp/page"
+        required: false
+        default: "./tmp/page/"
       docs_dir:
-        description: "Root directory of the website"
+        description: "Sub directory of documentation"
         type: "string"
-        required: true
-        default: "/docs"
+        required: false
+        default: "./docs"
       dry_run:
         description: "Flag for testing"
         type: "boolean"
