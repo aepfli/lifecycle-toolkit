@@ -2,6 +2,8 @@
 title: Home
 ---
 
+what
+
 <!-- markdownlint-disable MD033 -->
 <!-- markdownlint-disable-next-line MD013 -->
 {{< blocks/cover title="Welcome to the Keptn Lifecycle Toolkit Documentation" image_anchor="top" height="half" color="primary" >}}
