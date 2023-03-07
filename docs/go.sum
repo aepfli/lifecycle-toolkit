@@ -1,6 +1,10 @@
 github.com/FortAwesome/Font-Awesome v0.0.0-20220831210243-d3a7818c253f/go.mod h1:IUgezN/MFpCDIlFezw3L8j83oeiIuYoj28Miwr/KUYo=
+github.com/aepfli/community v0.0.0-20230307065604-2aee20343c99 h1:ADvY3D46GoHaX2bw2YTYGiX3cG+MRcYGzKmPGtLLq2s=
+github.com/aepfli/community v0.0.0-20230307065604-2aee20343c99/go.mod h1:MYLs9E2CSjsninpfxxBMt6H9JJrmEG32eK5L2Xbz7dE=
 github.com/google/docsy/dependencies v0.6.0 h1:BFXDCINbp8ZuUGl/mrHjMfhCg+b1YX+hVLAA5fGW7Pc=
 github.com/google/docsy/dependencies v0.6.0/go.mod h1:EDGc2znMbGUw0RW5kWwy2oGgLt0iVXBmoq4UOqstuNE=
 github.com/keptn-sandbox/lifecycle-toolkit-docs v0.0.0-20230209144724-01b35a6cfc44 h1:sKOYLKoh17pIouIO3G03C7lBfxSLTSxTfv4d/tWy280=
 github.com/keptn-sandbox/lifecycle-toolkit-docs v0.0.0-20230209144724-01b35a6cfc44/go.mod h1:G40ZMFR7InR/tEEHwZ3yiSafww+CU2jf7xxQ0wQjV1M=
+github.com/keptn/community v0.0.0-20230306082850-630ea488de5e h1:lGUkvgMpYwDGY+smaC1XJI5o8hdtO79GDVkbgMjddY8=
+github.com/keptn/community v0.0.0-20230306082850-630ea488de5e/go.mod h1:/hjF0H6PbrIqyBGnPW0FXLejzzjnIjgX8PNYrBB1MlI=
 github.com/twbs/bootstrap v4.6.2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
