@@ -217,5 +217,6 @@ and that the trace is also updated.
 You should also see in the Grafana Dashboards
 that the deployment was successful.
 
-Congratulations! You have successfully deployed an application
+Congratulations!
+You have successfully deployed an application
 using the Keptn Lifecycle Toolkit!

@@ -51,8 +51,8 @@ kubectl wait --for=condition=Available deployment/lifecycle-operator -n keptn-li
 
 The Lifecycle Toolkit and its dependencies are now installed and ready to use.
 
-> **Note:**
-Installation of the Lifecycle Toolkit version 0.6.0 and lower is not supported via helm charts.
+> **Note**
+Installation of the Lifecycle Toolkit version 0.5.0 and lower is not supported via helm charts.
 
 ## Install version 0.6.0 and earlier
 

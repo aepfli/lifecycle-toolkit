@@ -80,7 +80,8 @@ please submit an issue.
 * **Isitobservable**
   * [ ] Keptn has tight integrations with Observability tools and therefore knowing how to _Observe a System_ is important.
   * [ ] [Isitobservable website](https://isitobservable.io/)
-  * [ ] [Is it Observable? with Henrik Rexed](https://www.youtube.com/watch?v=aMwk2qo0v40)
+  * [ ] [Is it Observable?
+    with Henrik Rexed](https://www.youtube.com/watch?v=aMwk2qo0v40)
 
 ### Understanding SLO, SLA, SLIs
 
@@ -149,7 +150,7 @@ of the settings.
 
 If you are on Windows, you need to install **make** for the above process to complete.
 
-( **NOTE**:
+> **Note**:
 When using the make command on Windows, you may receive an `unrecognized command` error for a command that is installed.
 This usually indicates that `PATH` for the binary is not set correctly).
 
@@ -211,7 +212,8 @@ git push --set-upstream origin feature/123/foo
 > Note:
 All PRs must include a commit message with a description of the changes made!
 
-Make sure you **sign off your commits**. To do this automatically check [this](https://github.com/keptn/lifecycle-toolkit/blob/main/CONTRIBUTING.md#auto-signoff-commit-messages).
+Make sure you **sign off your commits**.
+To do this automatically check [this](https://github.com/keptn/lifecycle-toolkit/blob/main/CONTRIBUTING.md#auto-signoff-commit-messages).
 Finally, go to GitHub and create a Pull Request.
 There should be a PR template already prepared for you.
 If not, you will find it at `.github/pull_request_template.md`.
