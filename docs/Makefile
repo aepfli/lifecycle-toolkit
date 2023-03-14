@@ -15,7 +15,7 @@ shell:
 	$(DOCKER_CMD) -i $(VOLUMES) $(IMAGE) shell
 
 server:
-	$(DOCKER_CMD) $(VOLUMES) -p  $(PORT):$(PORT) $(IMAGE) server -D -p $(PORT) --disableFastRender
+	$(DOCKER_CMD) $(VOLUMES) -p  $(PORT):$(PORT) $(IMAGE) server -D -p $(PORT)
 
 clean:
 	$(DOCKER_CMD) $(VOLUMES) $(IMAGE) --cleanDestinationDir
@@ -35,7 +35,6 @@ lint: lint-fix
 #
 # - .markdownlintignore holds the configuration for files to be ignored
 # - .markdownlint.yaml contains the rules for markdownfiles
-#davidanson/markdownlint-cli2-rules:next
 # renovate: datasource=docker depName=ghcr.io/igorshubovych/markdownlint-cli
 MDL_DOCKER_VERSION := v0.33.0
 #MDL_CMD := docker run -v $(ROOT_DIR)../:/workdir --rm  ghcr.io/igorshubovych/markdownlint-cli:$(MDL_DOCKER_VERSION)  "**/*.md" 
