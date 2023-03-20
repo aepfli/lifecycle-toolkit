@@ -3,6 +3,7 @@ module github.com/keptn/lifecycle-toolkit/metrics-operator
 go 1.19
 
 require (
+	github.com/DataDog/datadog-api-client-go/v2 v2.9.0
 	github.com/benbjohnson/clock v1.3.0
 	github.com/go-logr/logr v1.2.3
 	github.com/gorilla/mux v1.8.0
@@ -19,7 +20,7 @@ require (
 	k8s.io/apiserver v0.26.2
 	k8s.io/client-go v0.26.2
 	k8s.io/component-base v0.26.2
-	k8s.io/klog/v2 v2.90.0
+	k8s.io/klog/v2 v2.90.1
 	k8s.io/metrics v0.26.2
 	sigs.k8s.io/controller-runtime v0.14.4
 	sigs.k8s.io/custom-metrics-apiserver v1.25.1-0.20230116101851-63817c8ac8f2
@@ -27,6 +28,7 @@ require (
 
 require (
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
+	github.com/DataDog/zstd v1.5.0 // indirect
 	github.com/NYTimes/gziphandler v1.1.1 // indirect
 	github.com/antlr/antlr4/runtime/Go/antlr v1.4.10 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
