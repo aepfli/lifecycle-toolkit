@@ -61,7 +61,7 @@ For installing the Lifecycle Toolkit via manifests use:
 <!---x-release-please-start-version-->
 
 ```shell
-kubectl apply -f https://github.com/keptn/lifecycle-toolkit/releases/download/v0.2.0/manifest.yaml
+kubectl apply -f https://github.com/keptn/lifecycle-toolkit/releases/download/v0.2.1/manifest.yaml
 ```
 
 <!---x-release-please-end-->
