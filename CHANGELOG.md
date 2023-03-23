@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/aepfli/lifecycle-toolkit/compare/v0.2.0...v0.2.1) (2023-03-23)
+
+
+### Bug Fixes
+
+* readme ([5158744](https://github.com/aepfli/lifecycle-toolkit/commit/51587440abc47e97759a5d1288cf382bd829e67a))
+
 ## [0.2.0](https://github.com/aepfli/lifecycle-toolkit/compare/v0.7.0...v0.2.0) (2023-03-23)
 
 
