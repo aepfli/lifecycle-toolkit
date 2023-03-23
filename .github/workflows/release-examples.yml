@@ -19,7 +19,7 @@ on:
         required: false
 
 jobs:
-  release-docs:
+  release-examples:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -38,12 +38,12 @@ jobs:
         with:
           route: GET /repos/:owner/:repository/releases/latest
           repository: lifecycle-toolkit
-          owner: ${{ env.GITHUB_REPOSITORY_OWNER }}
+          owner: aepfli
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Move old latest release examples folder
-        if: ${{ fromJson(steps.latest_release.outputs.data).tag_name ==  inputs.tag_name }}
+        if: ${{ fromJson(steps.latest_release.outputs.data).tag_name == inputs.tag_name || inputs.dry_run == true}}
         run: cp -R ./examples/* "${{ inputs.examples_dir }}"
 
       - name: Push content
@@ -54,3 +54,9 @@ jobs:
           cwd: ${{ inputs.examples_dir }}
           message: "feat: release examples ${{ inputs.tag_name }}"
           tag: "${{ inputs.tag_name }}"
+
+      - name: Print content
+        if: inputs.dry_run == true
+        run: |
+          cd ${{ inputs.examples_dir }}
+          git status

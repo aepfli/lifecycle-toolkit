@@ -1,0 +1,23 @@
+name: YAML checks
+
+on:
+  pull_request:
+    branches:
+      - 'main'
+      - '[0-9]+.[1-9][0-9]*.x'
+      - 'epic/*'
+    paths:
+      - 'examples'  
+jobs:
+  update-examples:
+    name: Update examples
+    needs:
+      - release-please
+    if: needs.release-please.outputs.releases_created == 'true'
+    with:
+      tag_name: ${{ needs.release-please.outputs.tag_name }}
+      dry_run: true
+    uses: ./.github/workflows/release-examples.yml
+    secrets: inherit
+
+
