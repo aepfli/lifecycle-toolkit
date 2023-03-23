@@ -38,7 +38,7 @@ jobs:
         with:
           route: GET /repos/:owner/:repository/releases/latest
           repository: lifecycle-toolkit
-          owner: keptn
+          owner: ${{ env.GITHUB_REPOSITORY_OWNER }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
