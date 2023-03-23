@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/aepfli/lifecycle-toolkit/compare/v0.2.1...v0.2.2) (2023-03-23)
+
+
+### Bug Fixes
+
+* improving pipeline ([a1846c2](https://github.com/aepfli/lifecycle-toolkit/commit/a1846c2ecb399e9638827d132d41645da1e0b8e3))
+
 ## [0.2.1](https://github.com/aepfli/lifecycle-toolkit/compare/v0.2.0...v0.2.1) (2023-03-23)
 
 
