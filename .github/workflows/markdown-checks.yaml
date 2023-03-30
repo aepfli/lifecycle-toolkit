@@ -36,6 +36,8 @@ jobs:
 
   markdown-lint:
     runs-on: ubuntu-22.04
+    permissions:
+      pull-requests: write
     steps:
       - name: Check out code
         uses: actions/checkout@v3
@@ -57,7 +59,23 @@ jobs:
           git diff --exit-code '*.md' || (echo "Table of Contents is out of date. Please update the following files: $(git diff --name-status --exit-code)" && exit 1)
 
       - name: Lint Markdown files
-        run: make markdownlint
+        id: markdownlint
+        run: 
+          echo "log=$(make markdownlint)" >> $GITHUB_OUTPUT
+        #continue-on-error: true
+
+      - name: PR Comment
+        uses: mshick/add-pr-comment@v2
+        if: ${{ failure() }}
+        with:
+          message: |
+            **Markdownlint errors**
+
+            Please run `make markdownlint-fix` on your local machine to try fix those errors.
+
+            ${{ steps.markdownlint.outputs.log }}
+
+
 
   check-crd-docs:
     name: Check CRD auto-generated docs
