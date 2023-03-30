@@ -38,9 +38,13 @@ lint: lint-fix
 # renovate: datasource=docker depName=ghcr.io/igorshubovych/markdownlint-cli
 MDL_DOCKER_VERSION := v0.33.0
 #MDL_CMD := docker run -v $(ROOT_DIR)../:/workdir --rm  ghcr.io/igorshubovych/markdownlint-cli:$(MDL_DOCKER_VERSION)  "**/*.md" 
-MDL_CMD := docker run -v $(ROOT_DIR)../:/workdir --rm 
+MDL_CMD := docker run -v $(ROOT_DIR)../:/workdir --rm
 
-.PHONY: markdownlint markdownlint-fix
+.PHONY: markdownlint-setup markdownlint markdownlint-fix
+
+markdownlint-setup:
+	docker pull davidanson/markdownlint-cli2-rules:next
+
 markdownlint:
 	$(MDL_CMD) davidanson/markdownlint-cli2-rules:next "**/*.md" 
 
